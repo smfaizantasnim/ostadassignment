@@ -19,6 +19,7 @@ body {
     align-items: center;
     padding: 12px;
     background-color: teal;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .logo {
@@ -58,9 +59,7 @@ body {
     }
 }
 
-main {
-    padding: 1em;
-}
+
 
 .banner {
     background-image: url('./image/banner.png');
@@ -74,6 +73,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input {
@@ -112,6 +112,7 @@ footer {
     text-align: center;
     padding: 1em;
     margin-top: 2em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #ageInput {
@@ -129,4 +130,65 @@ p {
     color: rgb(129, 224, 13);
     font-weight: 600;
     text-decoration: underline;
+}
+
+#angled-gradient {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+
+  .all-cardss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-containerss{
+    display: flex;
+    width: 550px;
+    background-color: #D4F1F4;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 2px;
+}
+img{
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+.cardss{
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+p{
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 600;
+    color: #0A758F;
+    text-align: center;
+}
+
+/* Apply a basic style to the card container */
+
+
+/* Style for each individual card */
+
+
+/* Make the images inside the cards responsive */
+
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    .all-cardss {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cardss {
+        width: 100%; /* Make cards take up full width on small screens */
+    }
 }
